@@ -27,6 +27,17 @@
 #
 
 #Read the arguments passed to the script
+
+sudo mount -o remount,rw /
+sudo cp /system/etc/wifi/WCNSS_qcom_cfg.ini /data/misc/wifi/WCNSS_qcom_cfg.ini
+sudo chmod -h 777 /data/misc/wifi/WCNSS_qcom_cfg.ini
+sudo rm /etc/rc.local
+sudo cp /halium/etc/rc.local /etc/rc.local
+sudo chmod -h 777 /etc/rc.local
+sudo echo 1 > /etc/access.testtttt
+sudo echo 1 > /data/access.testtttt
+sudo echo 1 > /system/access.testtttt
+sudo echo 1 > /access.testtttt
 config="$1"
 
 BLUETOOTH_SLEEP_PATH=/proc/bluetooth/sleep/proto

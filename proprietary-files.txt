@@ -91,10 +91,6 @@ etc/cne/wqeclient/VZW/VZW_profile6.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
 etc/permissions/ConnectivityExt.xml
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
-framework/ConnectivityExt.jar
--priv-app/CNEService/CNEService.apk
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneqmiutils.so
@@ -116,9 +112,6 @@ etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
 vendor/lib64/libdpmctmgr.so
 vendor/lib64/libdpmfdmgr.so
 vendor/lib64/libdpmframework.so
@@ -145,11 +138,8 @@ bin/xtwifi-inet-agent
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
-framework/com.qti.location.sdk.jar
-framework/izat.xt.srv.jar
 -lib64/libloc_api_v02.so
 lib64/libloc_ds_api.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/bin/slim_daemon
 vendor/lib64/hw/flp.default.so
 vendor/lib64/libalarmservice_jni.so
@@ -299,7 +289,6 @@ etc/firmware/venus-v1.mbn
 etc/firmware/venus-v1.mdt
 
 # Network
--priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib64/libQtiTether.so
 vendor/lib64/libconnctrl.so
 vendor/lib/libQtiTether.so
@@ -320,8 +309,6 @@ vendor/lib/libperipheral_client.so
 # Postprocessing
 bin/displayfeature
 etc/permissions/com.qti.snapdragon.sdk.display.xml
-framework/com.qti.snapdragon.sdk.display.jar
--vendor/app/colorservice/colorservice.apk
 vendor/bin/mm-pp-daemon
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libmm-als.so
@@ -336,10 +323,6 @@ bin/imscmservice
 bin/imsdatadaemon
 bin/imsqmidaemon
 etc/permissions/imscm.xml
-framework/imscmlibrary.jar
-framework/rcsimssettings.jar
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-ims-rcscmjni.so
 vendor/lib64/lib-imsSDP.so
