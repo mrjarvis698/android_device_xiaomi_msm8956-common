@@ -246,6 +246,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9335.xml:system/etc/sound_trigger_mixer_paths_wcd9335.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
 
+# Ubuntu-Touch Rules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
+    $(LOCAL_PATH)/ubuntu/android.conf::system/halium/etc/ubuntu-touch-session.d/android.conf \
+	$(LOCAL_PATH)/ubuntu/device-hacks.conf::system/halium/etc/ubuntu-touch-session.d/device-hacks.conf \
+    $(LOCAL_PATH)/ubuntu/rc.local:system/halium/etc/rc.local \
+    $(LOCAL_PATH)/ubuntu/servicemanager.rc:system/etc/init/servicemanager.rc
+
 # WCNSS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
